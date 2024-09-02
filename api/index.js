@@ -5,7 +5,6 @@ const userRouter = require('./routes/user.route')
 const authRouter = require('./routes/auth.route')
 dotenv.config();
 
-
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
